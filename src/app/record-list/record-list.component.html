@@ -1,0 +1,22 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">firstName</th>
+            <th scope="col">lastName</th>
+            <th scope="col">issueCount</th>
+            <th scope="col">dateOfBirth</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let record of records">
+            <td>{{ record.firstName }}</td>
+            <td>{{ record.surName }}</td>
+            <td>{{ record.issuesCount }}</td>
+            <td>{{ record.dateOfBirth }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
